@@ -1,0 +1,61 @@
+/* styles.css */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Styling for hospital name */
+#hospital-name {
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Styling for table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Styling for table headers */
+th {
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 10px;
+}
+
+/* Styling for table cells */
+td {
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Alternate row background color */
+tr:nth-child(even) td {
+    background-color: #fafad2; /* light yellow */
+}
+
+/* Styling for the button */
+#enter-new-patient {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: lightgreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

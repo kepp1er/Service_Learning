@@ -1,0 +1,100 @@
+/* Body styling for the background gradient */
+body {
+    background: linear-gradient(135deg, #0ce7f7, #61a7f7); /* Light orange gradient */
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Applying Roboto font to the entire page */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make the body take the full height of the viewport */
+}
+
+/* Styling for the form container */
+#patient-form {
+    width: 50%; /* Adjust the width as needed */
+    text-align: center;
+    animation: slideInRight 3s ease-in-out forwards; /* Slide in animation */
+    opacity: 0; /* Start with opacity 0 to hide initially */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center horizontally */
+    margin: auto; /* Center the container horizontally */
+}
+
+/* Styling for form inputs */
+#patient-form div {
+    width: 100%; /* Make each input container take full width */
+    max-width: 300px; /* Set maximum width for better layout on larger screens */
+    margin-bottom: 15px; /* Add space after each input container */
+}
+
+#patient-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left; /* Align labels to the left */
+}
+
+#patient-form input,
+#patient-form select,
+#patient-form textarea {
+    width: 100%; /* Make inputs take full width of their container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Styling for "Patient Information" heading */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Styling for Next button */
+.next-button {
+    margin-top: 20px; /* Add space between "Cash" entry and "Next" button */
+    margin-bottom: 100px; /* Add space between "Next" button and bottom */
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline for link */
+    opacity: 1; /* Ensure button is visible */
+    transition: opacity 0.3s ease; /* Add transition effect */
+    align-self: center; /* Center horizontally */
+}
+
+.next-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Animation keyframes for fading in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation keyframes for sliding in from the right */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* Error message styling */
+.error-message {
+    color: red;
+    margin-top: 10px;
+    display: none; /* Initially hidden */
+}

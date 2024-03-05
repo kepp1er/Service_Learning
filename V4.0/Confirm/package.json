@@ -1,0 +1,16 @@
+{
+  "name": "secondhand-look-grab-osio1",
+  "productName": "secondhand-look-grab-osio1",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "Kevin Johnson",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "27.1.3"
+  }
+}

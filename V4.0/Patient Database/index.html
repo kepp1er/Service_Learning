@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header" class="slide-in fade-in">
+        <h1 id="hospital-name"></h1>
+    </div>
+    <div id="patient-table" class="slide-in fade-in">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Consultant</th>
+                    <th>Particular</th>
+                    <th>Cash</th>
+                    <th>Medicines</th>
+                </tr>
+            </thead>
+            <tbody id="patient-records">
+                <!-- Table body will be populated dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <button id="enter-new-patient" class="slide-in fade-in">Enter New Patient Details</button>
+    <script src="renderer.js"></script>
+</body>
+</html>

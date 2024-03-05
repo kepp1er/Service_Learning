@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Reminder</title>
+    <!-- Add any necessary CSS styles -->
+</head>
+<body>
+    <h2>Medication Reminder</h2>
+    <form id="medication-form">
+        <div>
+            <label for="medicine-name">Medicine Name:</label>
+            <input type="text" id="medicine-name" name="medicine-name" required>
+        </div>
+        <div>
+            <label for="times-per-day">No. of Times Per Day:</label>
+            <input type="number" id="times-per-day" name="times-per-day" required>
+        </div>
+        <div>
+            <label for="time-points">Time Points:</label>
+            <input type="time" id="time1" name="time1" required>
+            <input type="time" id="time2" name="time2">
+            <!-- Add more time inputs as needed -->
+        </div>
+        <button type="submit">Save</button>
+    </form>
+    <script src="medication_reminder.js"></script>
+</body>
+</html>

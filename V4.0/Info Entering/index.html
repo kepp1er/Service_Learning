@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS styles for the Medication Reminder button */
+        .medication-reminder-button {
+            border-radius: 20px; /* Rounded edges */
+            font-family: 'Roboto', sans-serif; /* Roboto font */
+            padding: 10px 20px; /* Padding for better appearance */
+        }
+    </style>
+</head>
+<body>
+    <h1>Patient Information</h1>
+    <form id="patient-form">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+        </div>
+        <div>
+            <div>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required min="0"> <!-- Adding min="0" to prevent negative values -->
+</div>
+
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="visit-time">Visit Time:</label>
+            <input type="time" id="visit-time" name="visit-time" required>
+        </div>
+        <div>
+            <label for="consultant">Consultant:</label>
+            <input type="text" id="consultant" name="consultant" required>
+        </div>
+        <div>
+            <label for="particular">Particular:</label>
+            <textarea id="particular" name="particular" required></textarea>
+        </div>
+        <div>
+            <label for="transaction-mode">Cash:</label>
+            <select id="transaction-mode" name="transaction-mode" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <button id="medication-reminder-button" class="medication-reminder-button">Medication Reminder</button>
+    </form>
+
+    <!-- Next button -->
+    <a href="D:/Software%20and%20Stuff/Service%20Learning/V4.0/Confirm/index.html" class="next-button">Next</a>
+    <div id="error-message" class="error-message" style="display: none;">All information not entered</div>
+    <script src="renderer.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const medicationReminderButton = document.getElementById('medication-reminder-button');
+            medicationReminderButton.addEventListener('click', function() {
+                // Open a new window for medication reminder
+                window.open('D:/Software%20and%20Stuff/Service%20Learning/V4.0/Info%20Entering/medication_reminder.html', 'Medication Reminder', 'width=800,height=600');
+            });
+        });
+    </script>
+</body>
+</html>
